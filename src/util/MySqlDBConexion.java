@@ -34,7 +34,7 @@ public class MySqlDBConexion {
 			Connection salida = null;
 			try {
 				salida = DriverManager.getConnection(
-										"jdbc:mysql://localhost:3306/redsocial?serverTimezone=America/Lima",
+										"jdbc:mysql://localhost:3306/receta?serverTimezone=America/Lima",
 										"root",
 										"mysql");
 			} catch (SQLException e) {
@@ -42,7 +42,5 @@ public class MySqlDBConexion {
 			}
 			return salida;	
 		}
-	
-	
 
 }
